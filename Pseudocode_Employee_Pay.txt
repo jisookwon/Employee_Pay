@@ -1,0 +1,38 @@
+Pseudo Code for Calculate Employee's Pay
+
+	1. get employee's number, pay rate, the number of hours
+
+	2. validate pay rate field, hours worked field
+		if maximum hours>60 or maximun hourly rate = 25
+		then print message 
+		     print input data(employee's name, pay rate, the number of hours)
+		else compute employee's weekly pay
+             print employee's number, pay rate, number of hours, employee's weekly pay
+		end
+		
+		
+Input:
+	employee's number
+	pay rate
+	number of hours
+
+Processing:
+	maximum hours=60
+	maximun hourly rate=25
+	
+	if number of hours>60 or maximum hourly rate>25 
+		print message
+		print input data(employee's name, pay rate, the number of hours)
+	else 
+		if number of hours<35
+			weekly_pay=pay_rate*number_hours
+		else  
+			weekly_pay=pay_rate*35+pay_rate*1.5*(number_hours-35)
+		// end of inner if-statement	
+		
+		print input data and weekly_pay
+		
+	// end of outer if-statement	
+
+Output:
+	print based on result of validation 
